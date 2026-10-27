@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión · BioConnect</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main class="acceso">
+    <section class="tarjeta">
+      <h1>🌿 BioConnect</h1>
+      <p class="lema muted">Conectamos personas para cuidar la vida</p>
+      <form class="validar" data-destino="inicio.html" novalidate>
+        <div><label for="correo">Correo electrónico</label><input type="email" id="correo" placeholder="tucorreo@ejemplo.com" required><p class="error"></p></div>
+        <div><label for="clave">Contraseña</label><input type="password" id="clave" placeholder="Mínimo 8 caracteres" required><p class="error"></p></div>
+        <button type="submit" class="btn bloque">Ingresar</button>
+      </form>
+      <p class="muted" style="text-align:center;margin-top:14px">¿No tienes cuenta? <a href="registro.html">Crear cuenta</a></p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

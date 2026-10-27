@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio · BioConnect</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="inicio.html">🌿 BioConnect</a>
+    <button class="btn-menu" aria-label="Abrir menú">☰</button>
+    <nav>
+      <ul class="menu">
+        <li><a href="inicio.html" class="activo">Inicio</a></li>
+        <li><a href="empleo.html">Empleo</a></li>
+        <li><a href="biodiversidad.html">Biodiversidad</a></li>
+        <li><a href="perfil.html">Mi perfil</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+    <div class="avatar" title="Jimena Serna">JS</div>
+  </header>
+  <main class="contenedor">
+    <aside>
+      <section class="tarjeta" style="text-align:center">
+        <div class="avatar grande" style="margin:0 auto 8px">JS</div>
+        <h3>Jimena Serna</h3><p class="muted">Técnica veterinaria</p>
+        <p><span class="etiqueta">Veterinaria</span><span class="etiqueta">Software</span></p>
+      </section>
+    </aside>
+    <section>
+      <form id="form-publicar" class="tarjeta">
+        <textarea id="texto-pub" rows="3" placeholder="¿Qué quieres compartir hoy?"></textarea>
+        <div class="filtros" style="margin-top:8px">
+          <select id="tipo-pub"><option>Publicación</option><option>Investigación</option><option>Proyecto</option></select>
+          <button type="submit" class="btn">Publicar</button>
+        </div>
+      </form>
+      <div id="muro">
+        <article class="tarjeta publicacion">
+          <h3>Ana Ruiz · <span class="muted">Bióloga · hace 2 h</span></h3>
+          <span class="etiqueta">Investigación</span>
+          <p>Resultados del monitoreo de aves en la vereda La Betulia: 42 especies registradas en tres meses.</p>
+          <div class="acciones"><button class="me-interesa">💚 24 Me interesa</button><button>💬 6 comentarios</button></div>
+        </article>
+        <article class="tarjeta publicacion">
+          <h3>Fundación Selva Viva · <span class="muted">hace 5 h</span></h3>
+          <span class="etiqueta">Proyecto</span>
+          <p>Buscamos aliados para restaurar 20 hectáreas de bosque en Mocoa.</p>
+          <div class="acciones"><button class="me-interesa">💚 51 Me interesa</button><button>💬 13 comentarios</button></div>
+        </article>
+      </div>
+    </section>
+    <aside>
+      <section class="tarjeta"><h2>Ofertas recientes</h2>
+        <p><b>Monitor de fauna</b><br><span class="muted">Mocoa · Prestación de servicios</span></p>
+        <p style="margin-top:8px"><b>Vacunador bovino</b><br><span class="muted">Villagarzón · Término fijo</span></p>
+        <a class="btn borde bloque" href="empleo.html">Ver todas</a>
+      </section>
+      <section class="tarjeta"><h2>Biodiversidad</h2><p class="numero">3,4</p><p class="muted">Índice de Villagarzón</p></section>
+    </aside>
+  </main>
+  <footer>BioConnect · Conectamos personas para cuidar la vida · Putumayo, Colombia · 2026</footer>
+  <script src="app.js"></script>
+</body>
+</html>

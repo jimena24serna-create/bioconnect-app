@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empleo · BioConnect</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="inicio.html">🌿 BioConnect</a>
+    <button class="btn-menu" aria-label="Abrir menú">☰</button>
+    <nav>
+      <ul class="menu">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="empleo.html" class="activo">Empleo</a></li>
+        <li><a href="biodiversidad.html">Biodiversidad</a></li>
+        <li><a href="perfil.html">Mi perfil</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+    <div class="avatar" title="Jimena Serna">JS</div>
+  </header>
+  <main class="contenedor dos">
+    <section>
+      <div class="tarjeta filtros">
+        <div><label for="buscar">Buscar</label><input id="buscar" placeholder="Cargo o palabra clave"></div>
+        <div><label for="municipio">Municipio</label><select id="municipio"><option value="">Todos</option><option>Mocoa</option><option>Villagarzón</option><option>Puerto Asís</option></select></div>
+      </div>
+      <article class="tarjeta oferta" data-municipio="Mocoa">
+        <div class="info"><h3>Monitor de fauna silvestre</h3><p class="muted">Fundación Selva Viva · Mocoa · Prestación de servicios</p>
+          <p>Registro de aves y mamíferos en zonas de conservación.</p><span class="etiqueta">$2.800.000</span><span class="etiqueta">Cierra: 30 nov</span></div>
+        <button class="btn btn-postular" data-cargo="Monitor de fauna silvestre">Postularme</button>
+      </article>
+      <article class="tarjeta oferta" data-municipio="Villagarzón">
+        <div class="info"><h3>Vacunador bovino</h3><p class="muted">Finca El Roble · Villagarzón · Término fijo</p>
+          <p>Vacunación y registro sanitario del hato.</p><span class="etiqueta">$2.000.000</span><span class="etiqueta">Cierra: 15 nov</span></div>
+        <button class="btn btn-postular" data-cargo="Vacunador bovino">Postularme</button>
+      </article>
+      <article class="tarjeta oferta" data-municipio="Puerto Asís">
+        <div class="info"><h3>Guía de ecoturismo</h3><p class="muted">Reserva Amazónica · Puerto Asís · Medio tiempo</p>
+          <p>Recorridos guiados de observación de aves.</p><span class="etiqueta">$1.750.905</span><span class="etiqueta">Cierra: 20 dic</span></div>
+        <button class="btn btn-postular" data-cargo="Guía de ecoturismo">Postularme</button>
+      </article>
+    </section>
+    <aside><section class="tarjeta"><h2>Mis postulaciones</h2><ul id="mis-postulaciones" class="lista-registros"><li>Auxiliar de laboratorio <span class="etiqueta">Entrevista</span></li></ul></section></aside>
+  </main>
+  <footer>BioConnect · Conectamos personas para cuidar la vida · Putumayo, Colombia · 2026</footer>
+  <script src="app.js"></script>
+</body>
+</html>

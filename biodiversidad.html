@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodiversidad · BioConnect</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="inicio.html">🌿 BioConnect</a>
+    <button class="btn-menu" aria-label="Abrir menú">☰</button>
+    <nav>
+      <ul class="menu">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="empleo.html">Empleo</a></li>
+        <li><a href="biodiversidad.html" class="activo">Biodiversidad</a></li>
+        <li><a href="perfil.html">Mi perfil</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+    <div class="avatar" title="Jimena Serna">JS</div>
+  </header>
+  <main class="contenedor dos">
+    <section>
+      <div class="tarjeta"><h2>Índice de biodiversidad · Villagarzón</h2>
+        <div class="indice"><div><p class="numero">3,4</p><p class="muted">Índice de Shannon</p></div><div><p class="numero">128</p><p class="muted">Especies registradas</p></div></div>
+        <p>Aves</p><div class="barra" style="width:80%"></div>
+        <p>Mamíferos</p><div class="barra" style="width:45%;background:#66BB6A"></div>
+        <p>Anfibios</p><div class="barra" style="width:30%;background:#A5D6A7"></div>
+      </div>
+      <div class="tarjeta"><h2>Mis registros</h2><ul id="lista-registros" class="lista-registros"><li>Danta amazónica · 1 individuo(s) · validado</li></ul></div>
+    </section>
+    <aside>
+      <form id="form-especie" class="tarjeta" novalidate><h2>Registrar especie</h2>
+        <label for="especie">Especie</label><select id="especie"><option>Guacamaya bandera (Ara macao)</option><option>Danta amazónica (Tapirus terrestris)</option><option>Jaguar (Panthera onca)</option><option>Rana de tres rayas (Ameerega trivittata)</option></select>
+        <label for="cantidad">Cantidad de individuos</label><input type="number" id="cantidad" min="1"><p class="error" id="error-cantidad"></p>
+        <label for="foto">Foto</label><input type="file" id="foto" accept="image/*">
+        <button type="submit" class="btn bloque">Guardar registro</button>
+      </form>
+    </aside>
+  </main>
+  <footer>BioConnect · Conectamos personas para cuidar la vida · Putumayo, Colombia · 2026</footer>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear cuenta · BioConnect</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main class="acceso">
+    <section class="tarjeta">
+      <h1>Crear cuenta</h1>
+      <p class="lema muted">Únete a la red de la biodiversidad</p>
+      <form class="validar" data-destino="inicio.html" novalidate>
+        <div class="fila">
+          <div><label for="nombres">Nombres</label><input id="nombres" required><p class="error"></p></div>
+          <div><label for="apellidos">Apellidos</label><input id="apellidos" required><p class="error"></p></div>
+        </div>
+        <div><label for="correo">Correo electrónico</label><input type="email" id="correo" required><p class="error"></p></div>
+        <div><label for="clave">Contraseña</label><input type="password" id="clave" required><p class="error"></p></div>
+        <div class="fila">
+          <div><label for="rol">¿Quién eres?</label><select id="rol" required><option value="">Selecciona</option><option>Profesional</option><option>Estudiante</option><option>Empleador</option></select><p class="error"></p></div>
+          <div><label for="muni">Municipio</label><select id="muni" required><option value="">Selecciona</option><option>Villagarzón</option><option>Mocoa</option><option>Puerto Asís</option></select><p class="error"></p></div>
+        </div>
+        <button type="submit" class="btn bloque">Crear cuenta</button>
+      </form>
+      <p class="muted" style="text-align:center;margin-top:14px">¿Ya tienes cuenta? <a href="index.html">Ingresar</a></p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
